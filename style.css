@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+body{
+    background-color: #000;
+    color: #fff;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+main{
+    height: 200vh;
+    display: flex;
+    align-items: center;
+
+}
+section.sessao{
+    background-color: #020202;
+    height: 50vh;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+}
+
+article{
+    border: 1px solid #ffd900;
+    margin: 0% 8%;
+    width: 100%;
+    background-color: #141414;
+    border-radius: 10px;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.coluna{
+    width: 90%;
+}
+
+.image{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image img{
+    width: 100%;
+}
+
+article .titulo{
+    padding: .5rem 0rem;;
+}
+
+article .titulo h1{
+    color: #fff;
+    font-size: 2rem;
+    border-bottom: 2px solid #ffd900;
+}
+
+article .texto p{
+
+    font-size: 1rem;
+    text-align: justify;
+}
+
+.form{
+    width: 100%;
+    padding: 1rem 0rem; 
+}
+
+.inputes{
+    padding: 1rem 0rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.inputes input{
+    padding: .3rem;
+    outline: none;
+    border: none;
+    border-radius: 7px;
+}
+
+.inputes button{
+    background-color: #bda000;
+    padding: .3rem;
+    border: none;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.inputes button:hover{
+    box-shadow: 0px 0px 8px 0px  #ffd900;
+    transform: scale(1.05);
+}
+
+.inputes input:focus{
+    border: 2px solid #ffd900;
+}
+
+span{
+    color: #ffd900;
+}
+
+@media screen and (max-width: 800px){
+    article{
+        flex-direction: column;
+    }
+
+    .image{
+        width: 70%;
+    }
+    
+    .inputes{
+        flex-direction: column;
+    }
+    
+}
